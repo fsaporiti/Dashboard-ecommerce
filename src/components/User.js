@@ -10,7 +10,6 @@ function BasicExample() {
     fetch('http://localhost:3100/api/users/total')
       .then(response => response.json())
       .then(data => {
-        console.log(data)
         setUsuarios(data.data.users)
       })
       .catch(error => console.error(error));
@@ -25,7 +24,9 @@ function BasicExample() {
   }, [])
 
   return (
-    <Card style= {{ margin: '20px'}}>
+    <Card className='listado' style={{borderLeft: '5px solid violet'}}>
+      <br/>
+      <h4 className='titulo' style={{color:'violet'}}>Usuarios registrados</h4>
         <Card.Body>
             <Table striped bordered hover>
             <thead>
@@ -50,7 +51,6 @@ function BasicExample() {
                   )
                 }) 
               }
-               
             </tbody>
             </Table>
         </Card.Body>

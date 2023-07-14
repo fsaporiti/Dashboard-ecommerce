@@ -1,26 +1,25 @@
 import './App.css';
 
-import Productos from './components/Productos';
+import GroupExample from './components/Detail';
 import BasicExample from './components/User';
 import TabsExample from './components/Navbar';
-import Vendidos from './components/Vendidos';
 
 import { Link, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <h1 className='titulo'>Dashboard DDecoHouse</h1> 
+    <div >
+      <div>
+      <br/>  
+      <br/>  
+      <h2 className='titulo'>Dashboards DDecoHouse</h2>
+      </div>
         <br/>
-          <div>
-            <TabsExample />
-          </div>
+        <div>
+        <GroupExample />
+        <BasicExample />
+        </div>
         <br/>
-          <Routes>
-            <Route path='/' element={<Productos />} />
-            <Route exact path='/user' element={<BasicExample />} />
-            <Route exact path='/vendidos' element={<Vendidos />} />
-          </Routes>
     </div>
   );
 }

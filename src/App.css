@@ -38,7 +38,32 @@
 }
 
 .titulo {
-  color: blue;
+  color: rgb(66, 66, 66);
   text-align: center;
-  margin: 20px;
+}
+
+.cartas {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  border-left: 5px orange solid;
+}
+
+.cartas2 {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  border-left: 5px rgb(19, 228, 0) solid;
+}
+
+.cartas3 {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  border-left: 5px blue solid;
+}
+
+.listado {
+  margin: 20px; 
+  margin-top: 50px; 
+  border: solid 2px black;
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+#root {
+  background-color: rgb(231, 231, 231);
 }
